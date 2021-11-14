@@ -30,6 +30,14 @@ canvas {
     position: absolute;
 }
 
+.logo {
+    position: absolute;
+    z-index: 3;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 /* ==============star样式=================== */
 
@@ -70,15 +78,28 @@ body {
 
 /*流星后面的尾巴*/
 
-.star:after {
+
+/* .star:before {
+    content: ' ';
+    display: block;
+    border: 1px solid #fff;
+    border-width: 0px 20px 5px 40px;
+    left: 5px;
+    transform: rotate(220deg);
+    border-color: transparent transparent transparent #eee;
+} */
+
+.starContent {
     content: ' ';
     display: block;
     border: 1px solid #fff;
     border-width: 0px 75px 2px 125px;
     left: 5px;
-    /* transform: rotate(-45deg); */
     transform: rotate(220deg);
     border-color: transparent transparent transparent #eee;
+    opacity: .8;
+    position: relative;
+    border-radius: 0 50% 50% 0;
 }
 
 
